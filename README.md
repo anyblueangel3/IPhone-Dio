@@ -6,21 +6,21 @@ classDiagram
     }
 
     class ReprodutorMusical {
-        +tocar()
-        +pausar()
-        +selecionarMusica(musica: String)
+        +void tocar()
+        +void pausar()
+        +void selecionarMusica(String musica)
     }
 
     class AparelhoTelefonico {
-        +ligar(numero: String)
-        +atender()
-        +iniciarCorreioVoz()
+        +void ligar(String numero)
+        +void atender()
+        +void iniciarCorreioVoz()
     }
 
     class NavegadorNaInternet {
-        +exibirPagina(url: String)
-        +adicionarNovaAba()
-        +atualizarPagina()
+        +void exibirPagina(String url)
+        +void adicionarNovaAba()
+        +void atualizarPagina()
     }
 
     IPhoneDio <|-- ReprodutorMusical
